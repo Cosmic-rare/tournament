@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <link href="css/light-64c6f23.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" defer></script>
+</head>
+
+<body>
+    <div class="col-12 col-md-7 col-lg-5 mx-md-auto">
+        <div class="mx-1">
+
+            <div class="container-fluid px-1">
+                <div class="mt-2 row row-cols-2 row-cols-sm-3 g-2">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#tournamentModal0">
+                        <span style="font-size: .9rem;">なんか</span></button>
+                </div>
+            </div>
+            <style>
+                .point {
+                    display: none;
+                }
+            </style>
+            <div class="modal fade" id="tournamentModal0" tabindex="-1" aria-labelledby="tournamentModalLabel0"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="tournamentModalLabel0">なんか</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text-end">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input point-toggle" type="checkbox" value=""
+                                        id="pointToggle0" onchange="togglePoint(this);">
+                                    <label class="form-check-label" for="pointToggle0">得点表示</label>
+                                </div>
+                            </div>
+                            <div style="position: relative; height: 45em; overflow-x: hidden;">
+                                <div
+                                    style="position: absolute; top: 0.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">3-1</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 1em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 1em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A5</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 1em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">4
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 2em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">12:40</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 2em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 2em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 2.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">2-6</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 3em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A1</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 3em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 3em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 3em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 4em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">9:30</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 4em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">7
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 4em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 4.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">2-3</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 5em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">1
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 5em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A1</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 5em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">3
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 6em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">9:10</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 6em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 6em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 6.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">9-9</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 7em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A2</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 7em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">9
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 7em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 7em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 8em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">10:10</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 8em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A6</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 8em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 8em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 8em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 8.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">1-6</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 9em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">0
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 9em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">13:20</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 9em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 9em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 9em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 10em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">0
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 10em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A5</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 10em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">1
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 10.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">1-2</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 11em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 11em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">0
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 11em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">12:40</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 11em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 11em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 12em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 12em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 12.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">3-5</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 13em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 13em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A4</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 13em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">2
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 13em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 13em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 14em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">11:30</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 14em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 14em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 14em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 14em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 14.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">2-4</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 15em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 15em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">2
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 15em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 15em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 15em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 16em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A2</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 16em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 16em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 16em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 16.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">2-7</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 17em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A3</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 17em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">2
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 17em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">9:50</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 17em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">1
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 17em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 18em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">10:50</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 18em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A7</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 18em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 18em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 18em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 18.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">1-5</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 19em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">1
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 19em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">14:00</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 19em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 19em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 19em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 20em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">3
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 20em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 20.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">3-2</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 21em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 21em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">4
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 21em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">A8</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 21em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 22em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">14:40</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 22em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">1位</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 22.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">3-4</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 23em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 23em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">B4</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 23em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">0
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 23em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">
+                                        2-6</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 24em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">11:30</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 24em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 24em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 24em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 24.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">1-4</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 25em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 25em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">6
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 25em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 25em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">2位</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 26em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">B1</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 26em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">2
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 26em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">
+                                        3-7</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 26.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">2-5</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 27em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">B1</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 27em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">1
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 27em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">9:10</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 27em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 27em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 27em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 28em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">9:30</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 28em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">B5</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 28em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 28em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 28em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 28em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 28.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">2-1</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 29em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">0
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 29em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">12:40</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 29em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 29em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 29em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 29em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 30em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">4
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 30em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 30em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 30.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">3-6</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 31em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 31em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">3
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 31em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 31em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 32em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">B5</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 32em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 32em; left: 78.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 32.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">3-3</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 33em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 33em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">B6</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 33em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">0
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 33em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">12:40</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 33em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">0
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 34em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">13:20</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 34em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 34em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 34em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 34.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">1-7</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 35em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">B2</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 35em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 35em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 35em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 35em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 36em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">10:10</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 36em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">2
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 36em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">B2</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 36em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 36em; left: 65.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 36.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">2-2</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 37em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">6
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 37em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">9:50</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 37em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">4
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 38em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 38.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">1-1</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 39em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">B3</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 39em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">1
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 39em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 40em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">10:50</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 40em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">B7</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 40em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #adb5bd;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 40em; left: 52.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 40.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">1-3</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 41em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #adb5bd;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">7
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 41em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">14:00</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 41em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545; border-left: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">4
+                                    </div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 42em; left: 39.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-left: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 42.5em; left: 0.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;">3-7</div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 43em; left: 13.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div style="font-size: 0.8em; width: 100%; text-align: right;"></div>
+                                </div>
+                                <div
+                                    style="position: absolute; top: 43em; left: 26.0%; height: calc(1em + 3px); width: calc(13% + 3px); padding-right: 10px; border-top: 3px solid #dc3545;">
+                                    <div class="point"
+                                        style="font-size: 0.8em; width: 100%; text-align: right; color: #dc3545;">7
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary rounded-pill"
+                                data-bs-dismiss="modal">閉じる</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        function togglePoint(el) {
+            if (el.checked) {
+                document.querySelectorAll('.point-toggle').forEach(ch => {
+                    ch.checked = true;
+                });
+                document.querySelectorAll('.point').forEach(po => {
+                    po.style.display = 'block';
+                });
+            } else {
+                document.querySelectorAll('.point-toggle').forEach(ch => {
+                    ch.checked = false;
+                });
+                document.querySelectorAll('.point').forEach(po => {
+                    po.style.display = 'none';
+                });
+            }
+        }
+    </script>
+    </div>
+    </div>
+</body>
+
+</html>
